@@ -5,7 +5,7 @@ COUR = 'cour.ttf'
 COURBD = 'courbd.ttf'
 ARIAL = 'arial.ttf'
 
-FONT_DIRECTORY = "C:\\Windows\\Fonts"
+# FONT_DIRECTORY = "C:\\Windows\\Fonts"
 DEFAULT_FONT = COUR
 DEFAULT_FONT_SIZE = 18
 

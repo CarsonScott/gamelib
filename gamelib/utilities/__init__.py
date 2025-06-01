@@ -228,27 +228,27 @@ def mat_to_surf(mat):
 			surf.set_at((x, y), color)
 	return surf
 
-# def get_font_list():
-# 	F=os.listdir(FONT_DIRECTORY)
-# 	Y=[]
-# 	for i in range(len(F)):
-# 		file,ext=os.path.splitext(F[i])
-# 		if ext=='.ttf':
-# 			Y.append(os.path.join(FONT_DIRECTORY, F[i]))
-# 	return Y
+def get_font_list():
+	F=os.listdir(FONT_DIRECTORY)
+	Y=[]
+	for i in range(len(F)):
+		file,ext=os.path.splitext(F[i])
+		if ext=='.ttf':
+			Y.append(os.path.join(FONT_DIRECTORY, F[i]))
+	return Y
 
-# def load_font(filename, size):
-# 	pygame.font.init()
-# 	if '\\' not in filename:
-# 		filename=os.path.join(FONT_DIRECTORY, filename)
-# 	return pygame.font.Font(filename, size)
+def load_font(filename, size):
+	pygame.font.init()
+	if '\\' not in filename:
+		filename=os.path.join(FONT_DIRECTORY, filename)
+	return pygame.font.Font(filename, size)
 
-# def render_font(string, position=[0,0], font=DEFAULT_FONT, antialias=1, color=(255,255,255)):
-# 	if isinstance(font, str):font=load_font(font, DEFAULT_FONT_SIZE)
-# 	surface=font.render(string, antialias, color)
-# 	rect=surface.get_rect()
-# 	rect.topleft=position
-# 	return surface, rect
+def render_font(string, position=[0,0], font=DEFAULT_FONT, antialias=1, color=(255,255,255)):
+	if isinstance(font, str):font=load_font(font, DEFAULT_FONT_SIZE)
+	surface=font.render(string, antialias, color)
+	rect=surface.get_rect()
+	rect.topleft=position
+	return surface, rect
 
 def print_template(screen_size=(640,480)):
 	template='''
